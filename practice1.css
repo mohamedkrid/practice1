@@ -1,0 +1,477 @@
+*{
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing: padding-box ; 
+}
+html {
+    box-sizing: padding-box ;
+    -moz-box-sizing: padding-box ;
+    -ms-box-sizing: padding-box ;
+    -webkit-box-sizing: padding-box ;
+    position: relative ;
+    perspective: 600px ;
+}
+.container1 {
+    width : 80%  ;
+    height : 100% ;
+    margin: auto ;
+}
+.slider {
+    
+    width : 100% ;
+    height : 780px ;
+    background: rbga(0 , 0,0, 0 .1)  ;
+    display : inline-block ;
+    z-index: 99 ; 
+}
+.nav_bar {
+ 
+    width : 100%  ;
+    height : 70px ; 
+}
+nav {
+    width : 100%  ;
+    height : 50px ;
+    display: flex ;
+    justify-content: space-between ;
+    -moz-justify-content: space-between ;
+    -ms-justify-content: space-between ;
+    -web-justify-content: space-between ;
+    padding: 20px  ;
+   }
+.logo {
+    width : 120px  ;
+    height : 40px  ;
+    
+}
+.logo img {
+    width : 100% ;
+    height :  100%    ; 
+}
+.options li {
+    text-decoration: none ;
+    display : inline-block  ;
+    padding-left:    25px ;
+    padding-top : 5px ;
+    padding-right:    25px ;
+    height: 40px ;
+   box-sizing:border-box
+    
+    
+    
+}
+.options li:nth-of-type(2) {
+        border-right : 2px solid #fff ;
+        border-radius: 2px ;
+}
+.options li:last-of-type {
+    background-color :#3065df ;
+    border-radius: 5px ;
+    padding-bottom: 0 ;
+    
+}
+.options li a {
+    text-decoration: none ;
+    font-size: 18px ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    color : #fff ;
+    
+}
+.search_bar {
+    
+    width: 100% ;
+    height : 87%;
+    position: relative ;
+    overflow: hidden ;
+}
+.search_bar .search {
+    width: 36% ;
+    position: absolute ;
+    top : 30%  ;
+    left : 17vh  ; 
+}
+.search_bar .search h1 {
+    font-size: 64px ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    font-weight: 400;
+    color : #fff ;
+    margin-bottom: 20px ;
+}
+.search_bar .search > a {
+    text-decoration: none ;
+     font-size: 33px ;
+    font-family: 'lato' , Helvetica  , sans-serif ;
+    font-weight: 400;
+    color : #fff ;
+     margin-bottom: 20px ;
+     display: inline-block ;
+     transition: border 0.5s ease-in-out .2s ; 
+}
+.search_bar .search > a:hover {
+    border-bottom: 5px solid #037ef3 ;
+    display: inline-block ;
+    border-radius: 5px ; 
+}
+.search_bar .search h2 {
+   
+}
+.search_bar .search p {
+    font-size: 16px ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    color : #fff ;
+        margin-bottom: 50px ;
+
+}
+.search_bar .search div {
+    position: relative ;
+     width: 500px  ;
+    height : 42px ;
+    
+    
+}
+.search_bar .search div input[type='text'] {
+    width: 100%  ;
+    height : 100% ;
+    font-size :20px  ;
+     border: none ;
+     border-radius: 2px
+   
+}
+.search_bar .search div .getstarted a {
+    
+    text-decoration: none ;
+    width : 100% ;
+    color: #fff ;
+    font-family: 'lato'  ;
+    font-size:  20px ;
+    padding: 2px ;
+    font-weight  : 900 ;
+
+    
+}
+.search_bar .search div .getstarted {
+    position: absolute ;
+     width : 125px ;
+    height :35px  ;
+     top : 4px ;
+    right: 4px;
+     background: #3065df ;
+    display: block ;
+    border-radius: 2px ;
+    text-align: center ;
+
+}
+ video {
+    width : 100% ;
+    height : 780px ;
+    position: absolute ;
+    top : 0  ;
+    right : 0 ;
+    z-index: -1 ;
+    object-fit: cover ; 
+}
+.slider i {
+    width: 20px ;
+    height : 20px  ;
+    display : block  ;
+    border-right: 3px solid #fff ;
+    border-bottom: 3px solid #fff ;
+    margin: auto ;
+    animation: animation1 1.5s ease-in-out infinite alternate ; 
+    /*transform: rotateZ(45deg) ; */
+}
+.introduction {
+    width: 100%  ;
+    height : 500px  ;
+    background:linear-gradient(30deg , #d481ff , #05f1e1) ;
+    
+}
+.introduction h2 {
+     font-size: 40px ;
+     width: 50% ;
+     height 80px;
+     padding-top: 40px;
+     padding-bottom: 40px;
+    font-family: 'lato' , Helvetica  , sans-serif ;
+    font-weight: 400;
+    color : #fff ;
+     display: inline-block;
+     text-transform: capitalize ;
+     margin: auto ;
+     text-align: left ;
+     text-indent:5% ;
+     text-transform: capitalize ;
+     
+}
+.introduction p {
+    display: block;
+    font-size:20px ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    color : #fff ;
+        margin-bottom: 30px ;
+        padding-right: 20px;
+        text-align: justify;
+        text-transform: capitalize ;
+        line-height: 1.5em ;
+        width: 40% ;
+        }
+.introduction img {
+    width : 50% ;
+    float: right ;
+    height: 100%;
+    object-fit: cover
+}
+#exp1 img {
+    float : left  ; 
+}
+#exp1 p {
+    float: right  ; 
+}
+#exp1  h2  {
+    text-indent : 170px
+}
+section:nth-last-of-type(5) {
+    background:linear-gradient(189deg , #ca783a , #05f1e1) ;
+}
+.best-agents {
+    width: 100%  ;
+    height : 900px  ;
+    background: linear-gradient( 347deg , #0069da 5% , #05f1e1); ;
+    background-size: cover ;
+    
+}
+.best-agents h1 {
+        font-size: 50px  ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    font-weight: 400;
+    color : #fff ;
+    text-align: center ;
+    text-transform: capitalize ;
+    padding-top : 20px
+}
+.best-agents .cont-1 {
+    width: 100%  ;
+    height : 100%  ;
+    display: flex ;
+    justify-content: space-between  ;
+    align-items: center ;
+    flex-wrap: wrap ;
+}
+.best-agents .cont-1 article {
+    flex-basis: 400px   ;
+    height: 70% ;
+    background-image: url(images/wall1.jpg) ;
+    background-size: cover ; 
+    flex-shrink: 0 ;
+    border-bottom  : 2px solid  #fff  ; 
+    border-top: 5px solid #34f711 ;
+    transition: all 0.25s ease-in-out ;
+    border-radius:15px ;
+    overflow : hidden  ; 
+}
+#little {
+     width  : 100% ;
+      height  : 20%   ;
+      background :transparent ;
+      margin-bottom : 0  ; 
+      
+}
+#little span {
+    display : inline-block ; 
+    border :  2px  #000 solid ;
+    margin  : 5px 10px 5px  ;
+    padding :  5px  ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    border-radius : 4px ;
+    background:rgba(139,157,127,0.5) ;
+    color  : #fff  ; 
+
+    
+    
+}
+#big {
+     width : 100%  ;
+     height : 64% ;
+     background: transparent  ;
+     p
+   
+    } 
+#big b {
+     text-indent : 70px ;
+ font-size : 80pt  ;
+     color : #fff  ;
+     display : inline-block ;
+     margin :  0 auto  ;
+      font-family: 'lato' ,Helvetica  , sans-serif ;
+    
+}
+
+.best-agents .cont-1 article:hover {
+    box-shadow: 0 0 15px 15px #c6c2c2 ;
+        border-bottom  : 7px solid  #fff  ; 
+
+}
+.best-agents .cont-1 article:nth-of-type(2) {
+     background-image: url(images/wall3.jpg) ;
+    border-top: 5px solid #f7a611 ; 
+}
+.best-agents .cont-1 article:nth-of-type(2) h1 {
+    color: #f7a611 ;
+}
+.best-agents .cont-1 article:last-of-type {
+    border-top: 5px solid #1122f7 ;
+     background-image: url(images/wall2.jpg) ;
+}
+.best-agents .cont-1 article:last-of-type h1 {
+    color: #1122f7 ;
+}
+.best-agents .cont-1 article h1 {
+    padding: 20px ;
+    color: #34f711 ;
+    
+}
+.best-agents .cont-1 article h2 {
+    margin-top: 50px;
+     font-family: 'lato' ,Helvetica  , sans-serif ;
+    color : #fff ;
+     text-transform: capitalize ;
+     font-weight: 100 ;
+     text-indent: 40px ;
+}
+.best-agents .cont-1 article p {
+     font-family: 'lato' ,Helvetica  , sans-serif ;
+     font-size: 20px ;
+     padding: 15px ;
+     text-align: justify ;
+     color : #fff
+    
+}
+
+.gallery {
+    width: 100% ;
+    background :linear-gradient( 193deg, #0069da 5% , #01ebb8);
+    display:block  ;
+    height : 600px ;
+    overflow : hidden  ;
+      
+    
+}
+.gallery h1 {
+        font-size: 50px  ;
+    font-family: 'lato' ,Helvetica  , sans-serif ;
+    font-weight: 400;
+    color : #fff ;
+    text-align: center ;
+    text-transform: capitalize ;
+    padding-top : 50px ;
+    margin-bottom  : 7%
+}
+.gallery a {
+    flex-basis :261px  ;
+    height : 270px  ;
+     flex-shrink: 0  ;
+    flex-grow : 0 ;
+     margin :2% ;
+     transition:  all 1s ease-in-out  ;
+  
+     background: transparent ;
+}
+.gallery .works {
+    width  : 100%  ;
+    height :100%  ;
+    background-color : #fff  ;
+    clip-path : polygon(50% 0% ,  100% 25% , 100% 75% , 50%  100% ,  0% 75% , 0% 25%  ) ;
+    
+    overflow  : visible  ;
+    background: transparent ;
+}
+.gallery a:hover {
+      flex-basis  : 391px    ;
+    height : 405px    ;
+
+   
+}
+.gallery .works img {
+    height : 100%  ;
+    width  : 100%
+}
+
+.gallery .cont-work  {
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between  ;
+    width  : 100% ;
+    height : 80%;
+    padding : 10px ; 
+    align-content: space-between   ;
+    overflow  :scroll ; 
+   
+}
+.map {
+    width : 100% ;
+    height : 400px ;
+    
+}
+.map iframe {
+    width  : 100% ;
+    height : 100% 
+}
+.footer {
+     width :  100% ;
+    height  : 350px  ;
+    background : linear-gradient(50deg , #006cd9 ,  #01d8bd)  ; 
+}
+#ss {
+    display : inline-block ; 
+    width : 48%   ;
+     height : 89% ; 
+     padding :  15px  ;
+    background :transparent ;
+    overflow  : hidden  ; 
+      
+}
+#ss h2 , h3  ,  h5  {
+     font-family : 'lato' ,Helvetica  , sans-serif ;
+    padding : 10px  ;
+    font-size : 1.5em ;
+    text-transform  :  capitalize ;
+        color : #fff ; 
+
+}
+#ff {
+        display :inline-block ;
+     width : 50% ;
+    height : 100% ;
+     background: #390d4d    ;
+     float : right  ;
+    clip-path  : polygon(0% 0%, 100% 0% , 100% 100% , 35% 100%  )  ; 
+    
+       
+}
+#ff h4  {
+     text-align  :   center  ;
+    margin-top  : 100px  ;
+     font-size : 16pt  ;
+     text-indent  : 100px  ;
+    font-family : 'lato' ,Helvetica  , sans-serif ;
+    color : #fff ; 
+}
+@font-face {
+    font-family: 'lato' ;
+    src  : url('Lato-Regular.ttf') ;
+}
+
+@keyframes animation1 {
+     0% , 100% {
+        transform: translateY(0px) rotateZ(45deg);
+     }
+     50% {
+        transform: translateY(-25px) rotateZ(45deg) ;
+        
+
+     }
+}
+
+
+
+
